@@ -1,0 +1,65 @@
+{
+    "code-runner.runInTerminal": true,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "C:\\WINDOWS\\system32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "[sql]": {
+        "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+    },
+    "csv-edit.fontSizeInPx": 14,
+    "csv-preview.formatValues": "never",
+    "[csv]": {
+        "files.encoding": "shiftjis"
+    },
+    "[plaintext]": {
+        "files.encoding": "shiftjis"
+    },
+    "runTerminalCommand.commands": [
+        {
+            "command": "explorer {resource}",
+            "name": "選択したファイルを既定のアプリで開く",
+            "auto": true
+        },
+        {
+            "command": "code {resource}",
+            "name": "VSCode でフォルダを開く",
+            "auto": true
+        },
+        {
+            "command": "start chrome https://dev.mysql.com/doc/refman/5.6/ja/sql-syntax-data-manipulation.html",
+            "name": "MySQL データ操作ステートメント",
+            "auto": true
+        },
+        {
+            "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\sworc-settings-download.vbs",
+            "name": "設定ファイルのダウンロード",
+            "auto": true,
+            "group": "設定"
+        },
+        {
+            "command": "cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+            "name": "ワークスペース作成用スクリプトのダウンロード",
+            "auto": true,
+            "group": "設定"
+        },
+        {
+            "command": "\\xampp\\mysql\\bin\\my.bat",
+            "name": "MySQL Command Prompt",
+            "auto": true
+        }
+    ]    
+}

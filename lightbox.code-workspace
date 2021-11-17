@@ -1,11 +1,17 @@
 {
     "folders": [
         {
+            "path": ".git"
+        },
+        {
             "path": "access"
-        }
+        },
+        {
+            "path": "sql"
+        },
     ],
     "settings": {
-        "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+        "window.title": "${dirty}${activeEditorMedium}${separator}${rootPath}${separator}${rootName}",
         "code-runner.runInTerminal": true,
         "code-runner.fileDirectoryAsCwd": true,
         "code-runner.executorMapByFileExtension": {
@@ -333,6 +339,24 @@
                 "group": "🟦 C#"
             },
             {
+                "command": "cd ..\\ && git clone https://github.com/winofsql/cs-con-odbc-access-select.git && cd cs-con-odbc-access-select && rmdir .git /S /Q && dotnet add package System.Data.Odbc && dotnet add package System.Data.OleDb && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📕【バッチ + MS Access as DB( ODBC )】Microsoft Access に DB( ODBC ) としてアクセス",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "cd ..\\ && git clone https://github.com/winofsql/cs-con-odbc-excel-select.git && cd cs-con-odbc-excel-select && rmdir .git /S /Q && dotnet add package System.Data.Odbc && dotnet add package System.Data.OleDb && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📕【バッチ + MS Excel as DB( ODBC )】Microsoft Eccess に DB( ODBC ) としてアクセス",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
+                "command": "cd ..\\ && git clone https://github.com/winofsql/cs-con-odbc-csv-select.git && cd cs-con-odbc-csv-select && rmdir .git /S /Q && dotnet add package System.Data.Odbc && dotnet add package System.Data.OleDb && cscript C:\\Users\\%USERNAME%\\AppData\\Roaming\\Code\\User\\script\\workspace-build-download.vbs",
+                "name": "📕【バッチ + MS CSV as DB( ODBC )】CSV(テキストファイル) に DB( ODBC ) としてアクセス",
+                "auto": true,
+                "group": "🟦 C#"
+            },
+            {
                 "command": "start chrome http://font.sumomo.ne.jp/font_1.html",
                 "name": "───────────────────────────────────────────",
                 "auto": true,
@@ -567,7 +591,7 @@
                 "group": "🔄 テスト"
             },
             {
-                "command": "cd ..\\..\\ && if exist resource-winofsql\\. rmdir /S /Q resource-winofsql && git clone https://github.com/winofsql/resource-winofsql.git && cd resource-winofsql && rmdir .git /S /Q && Code lightbox.code-workspace",
+                "command": "cd ..\\..\\ && start . &&  git clone https://github.com/winofsql/resource-winofsql.git && cd resource-winofsql && rmdir .git /S /Q && Code lightbox.code-workspace",
                 "name": "🟥 販売管理リソース",
                 "auto": true,
                 "group": "📥 ダウンロード"
@@ -676,4 +700,5 @@
             }
         ]
     }
+
 }
