@@ -100,5 +100,5 @@ Access.DoCmd.TransferText 2,, "社員マスタ", "\app\workspace\csv\vbs-export-
 
 ## SQLServer CMD csv Export
 ```
-bcp.exe lightbox..[社員マスタ] out "\app\workspace\csv\bcp-export-syain.csv" -c -t , -r \n -S localhost\SQLEXPRESS -U sa -P trustno1
+bcp lightbox..[社員マスタ] out "\app\workspace\csv\bcp-export-syain.csv" -c -t , -r \n -S localhost\SQLEXPRESS -U sa -P trustno1
 ```
