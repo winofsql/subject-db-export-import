@@ -35,6 +35,11 @@ LOAD DATA INFILE
     LINES TERMINATED BY '\r\n';
 ```
 
+## PostgreSQL CMD Export
+```
+pg_dump -d -U postgres lightbox > lightbox.sql
+```
+
 ## PostgreSQL csv Export
 ```
 COPY 社員マスタ
