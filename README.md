@@ -37,8 +37,9 @@ LOAD DATA INFILE
 
 ## PostgreSQL CMD Export
 ```
-pg_dump -d -U postgres lightbox > lightbox.sql
+pg_dump -d lightbox -U postgres -Fp --inserts -f /app/workspace/postgres-backup.data
 ```
+-d データーベース -U ユーザ -Fp テキストフォーマット --insert insert文でデータを出力 -f 出力ファイル
 
 ## PostgreSQL csv Export
 ```
