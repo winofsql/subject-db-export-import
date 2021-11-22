@@ -65,3 +65,26 @@ WITH
     ENCODING 'sjis'
 ```
 
+## SQLite3 CMD
+
+### csv Export (1)
+```
+sqlite3 -csv -header lightbox.sqlite3 "select * from 社員マスタ" > syain.csv
+```
+
+### csv Export (2)
+#### csvget.txt
+```
+.headers on
+.mode csv
+.output syain.csv
+SELECT * FROM 社員マスタ;
+.quit
+```
+```
+sqlite3 lightbox.sqlite3 < csvget.txt
+```
+#### csv インポートコマンド
+```
+.import csv_file_path table_name
+```
