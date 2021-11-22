@@ -24,3 +24,13 @@ LOAD DATA INFILE
     OPTIONALLY ENCLOSED BY '"'
     LINES TERMINATED BY '\r\n';
 ```
+
+## PostgreSQL csv Export
+```
+COPY 社員マスタ
+    TO '/app/workspace/csv/postgres-export-syain.csv'
+WITH
+    CSV HEADER
+    ENCODING 'sjis'
+```
+
