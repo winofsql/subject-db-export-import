@@ -41,6 +41,12 @@ pg_dump -d lightbox -U postgres -Fp --inserts -f /app/workspace/postgres-backup.
 ```
 -d データーベース -U ユーザ -Fp テキストフォーマット --insert insert文でデータを出力 -f 出力ファイル
 
+## PostgreSQL CMD Import
+```
+pg_restore -Fp -c -d lightbox /app/workspace/postgres-backup.data
+```
+-c 直前に削除 
+
 ## PostgreSQL csv Export
 ```
 COPY 社員マスタ
