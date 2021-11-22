@@ -97,3 +97,8 @@ Set Access = Wscript.CreateObject("Access.Application")
 Access.OpenCurrentDatabase( "\app\workspace\販売管理.accdb" )
 Access.DoCmd.TransferText 2,, "社員マスタ", "\app\workspace\csv\vbs-export-sain.csv", 1
 ```
+
+## SQLServer CMD csv Export
+```
+bcp.exe lightbox..[社員マスタ] out "\app\workspace\csv\bcp-export-syain.csv" -c -t , -r \n -S localhost\SQLEXPRESS -U sa -P trustno1
+```
