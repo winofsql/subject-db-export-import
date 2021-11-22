@@ -34,3 +34,12 @@ WITH
     ENCODING 'sjis'
 ```
 
+## PostgreSQL csv Import
+```
+COPY 社員マスタ
+    FROM '/app/workspace/csv/postgres-export-syain.csv'
+WITH
+    CSV HEADER
+    ENCODING 'sjis'
+```
+
