@@ -24,7 +24,7 @@ SELECT
     LINES TERMINATED BY '\r\n';
 ```
 
-## MySQL csv Import
+### MySQL csv Import
 ```
 LOAD DATA INFILE
     'C:/app/workspace/subject-1101/subject-1008-mysql/data01.932'
@@ -47,7 +47,7 @@ pg_restore -Fp -c -d lightbox /app/workspace/postgres-backup.data
 ```
 -c 直前に削除 
 
-## PostgreSQL csv Export
+### PostgreSQL csv Export
 ```
 COPY 社員マスタ
     TO '/app/workspace/csv/postgres-export-syain.csv'
@@ -56,7 +56,7 @@ WITH
     ENCODING 'sjis'
 ```
 
-## PostgreSQL csv Import
+### PostgreSQL csv Import
 ```
 COPY 社員マスタ
     FROM '/app/workspace/csv/postgres-export-syain.csv'
