@@ -88,3 +88,12 @@ sqlite3 lightbox.sqlite3 < csvget.txt
 ```
 .import csv_file_path table_name
 ```
+### VBS Access csv Export
+```vbscript
+' https://docs.microsoft.com/ja-jp/office/vba/api/access.docmd.transfertext
+' https://docs.microsoft.com/ja-jp/office/vba/api/access.actexttransfertype
+Dim Access
+Set Access = Wscript.CreateObject("Access.Application")
+Access.OpenCurrentDatabase( "\app\workspace\販売管理.accdb" )
+Access.DoCmd.TransferText 2,, "社員マスタ", "\app\workspace\csv\vbs-export-sain.csv", 1
+```
