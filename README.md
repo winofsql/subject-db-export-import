@@ -1,5 +1,15 @@
 # subject-db-export-inport
 
+## MySQL CMD Export
+```
+mysqldump --host=localhost --user=root --password= lightbox > lightbox-backup.sql 
+```
+
+## MySQL CMD Import
+```
+mysql -h localhost -u root -D lightbox --password= < lightbox-backup.sql 
+```
+
 ### MySQL csv Export
 ```
 SELECT
