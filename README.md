@@ -84,7 +84,7 @@ SELECT * FROM 社員マスタ;
 ```
 sqlite3 lightbox.sqlite3 < csvget.txt
 ```
-#### csv インポートコマンド
+#### csv Import
 ```
 .import csv_file_path table_name
 ```
